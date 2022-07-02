@@ -146,10 +146,10 @@ function operadoresLogicos(num1, num2, num3) {
     return "Hay negativos"
   } else if (num1 > num2 && num1 > num3 && num1> 0){
     return "Número 1 es mayor y positivo"
-  } else if (num3 > num1 && num3 > num2) {
-    return (num3 +1)
   } else if (num1 === 0 || num2 === 0 || num3=== 0){
     return "Error"
+  } else if (num3 > num1 && num3 > num2) {
+    return (num3 +1)
   } else {
     return false
   }
@@ -161,11 +161,14 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero > 0 && numero > 1 && numero % 1 === 0 && numero % numero === 0){
-    return true
-  } else {
-    return false
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
+      return false;
+    }
   }
+  return true;
 }
 
 function esVerdadero(valor){
@@ -206,12 +209,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var x = 0;
+  var x = numero;
   var i = 0;
   do {
     x = x + 1
     i = i + 5
-  }  while (x < 9)
+  } 
+  while (x < 9)
   return i
 }
 
