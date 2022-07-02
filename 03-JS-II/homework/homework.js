@@ -7,10 +7,8 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x 
-  } else if (x < y) {
+  } else {
     return y
-  } else if (x===y){
-    return x
   }
 }
 
@@ -47,11 +45,11 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === aleman){
+  if (idioma === "aleman"){
     return "Guten Tag!"
-  } else if (idioma === mandarin){
+  } else if (idioma === "mandarin"){
     return "Ni Hao!" 
-  } else if (idioma === ingles){
+  } else if (idioma === "ingles"){
     return "Hello!"
   } else {
     return "Hola!"
