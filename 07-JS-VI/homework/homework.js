@@ -26,8 +26,8 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
   var numeros = []
-  var suma = 0
-  for (var i= 0; i < numeros.length, i++){
+  var suma = 0 
+  for (var i= 0; i < numeros.length ; i++) {
     suma= suma + numeros[i]
   }
   cb (suma)
@@ -37,9 +37,9 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  array.forEach (function (el, index)){
+  array.forEach (function (el, index){
     cb (el)
-  }
+  })
   for (var i = 0; i<array.length ; i++) {
     cb(array[i])
   }
