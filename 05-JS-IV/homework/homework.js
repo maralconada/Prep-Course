@@ -7,8 +7,8 @@ function crearGato (nombre, edad) {
   // Devuelve el objeto
   // Tu código:
   var obj = {
-    nombre: "nombre",
-    edad : "edad",
+    nombre: "Snowball",
+    edad : "1",
     meow : function (){
       return "Meow!"
     } 
@@ -21,7 +21,7 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objeto [property] = "null"
+  objeto [property] = null
   return objeto
 }
 
@@ -55,9 +55,9 @@ function nuevoUsuario (nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   var nuevoUsuario = {
-    nombre: "nombre" ,
-    email: "email",
-    password: "password"
+    nombre: "Jhon" ,
+    email: "jhon@email.com",
+    password: "correcthorsebatterystaple"
   }
   return nuevoUsuario
 }
@@ -66,7 +66,7 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario [email]){
+  if (usuario.email){
     return true
   } else {
     return false
@@ -90,7 +90,7 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (password === usuario [password]) {
+  if (password === usuario.password) {
     return true
   } else {
     return false
@@ -135,7 +135,7 @@ function sumarLikesDeUsuario (usuario) {
   usuario = {
     posts : [
       posts = {
-        likes : int 
+        likes : 5 
       }] ,   
   } ;
   var suma = 0

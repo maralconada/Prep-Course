@@ -202,6 +202,7 @@ function mesesDelAño(array) {
       return nuevoArray 
    }
 }
+}
 
 
 function mayorACien(array) {

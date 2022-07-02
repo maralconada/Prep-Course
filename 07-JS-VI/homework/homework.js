@@ -25,7 +25,7 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var numeros = []
+  var numeros = [1,2,3,4,5]
   var suma = 0 
   for (var i= 0; i < numeros.length ; i++) {
     suma= suma + numeros[i]
@@ -50,7 +50,7 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var array = []
+  var array = [1, 4, 9, 16, 25]
   for (var i= 0; i < array.length ; i++) {
    var nuevoArray = cb(array[i])
    nuevoArray.length === array.length
