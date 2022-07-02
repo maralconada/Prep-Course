@@ -39,7 +39,6 @@ function conection(status) {
     return "Offline"
   }
   }
-}
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
